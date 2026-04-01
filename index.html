@@ -1,11 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OpenHack Comox Valley</title>
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      margin: 0;
+      background: #0f172a;
+      color: #e2e8f0;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    h1 a {
+      color: #7dd3fc;
+      text-decoration: underline;
+    }
+
+    h1 a:hover {
+      color: #bae6fd;
+    }
+
+    .tagline {
+      color: #94a3b8;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background: #1e293b;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    .card a {
+      color: #7dd3fc;
+      text-decoration: underline;
+    }
+
+    .card a:hover {
+      color: #bae6fd;
+    }
+
+    .cta {
+      display: inline-block;
+      background: #22c55e;
+      color: black;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 12px;
+    }
+
+    .slack-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #4A154B;
+      color: white;
+      padding: 14px 22px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 10px;
+      transition: transform 0.1s ease, box-shadow 0.1s ease;
+    }
+
+    .slack-cta img {
+      width: 20px;
+      height: 20px;
+      filter: brightness(0) invert(1);
+    }
+
+    .slack-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    }
+  </style>
 </head>
+
 <body>
-  <p>hello world!</p>
+  <div class="container">
+    <h1><a href="https://openhack.github.io" target="_blank" rel="noopener noreferrer">OpenHack</a> Comox Valley</h1>
+
+    <div class="card">
+      <p><strong>📅 :</strong> Tuesdays - 6:00PM to 8:00PM</p>
+      <p><strong>📍 :</strong> <a href="https://www.gladstonebrewing.ca" target="_blank" rel="noopener noreferrer">Gladstone Brewing Company</a></p>
+      <p>
+        A casual meetup for coders and tech-curious folks of all levels. Bring a laptop, hack on anything. 
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Join Us!</h2>
+    
+      <a class="slack-cta" href="https://inviter.co/openhack-cumberland" target="_blank">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@11/icons/slack.svg" alt="Slack logo" width="20" height="20" />
+        Join our Slack
+      </a>
+    </div>
+  </div>
 </body>
 </html>
